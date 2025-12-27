@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>معاينة التصميم المخصص</title>
+  <!-- استدعاء ملف CSS المخصص -->
+  <link rel="stylesheet" href="salla_custom.css">
+  <style>
+    /* تنسيق بسيط للشبكات لأن بعض العناصر غير معرفة في ملف CSS */
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- الشريط العلوي التجريبي -->
+  <div class="announcement-bar">معاينة للشريط العلوي - هنا يمكنك وضع إعلان أو رسالة قصيرة</div>
+  
+  <!-- رأس الموقع التجريبي -->
+  <header class="header">
+    <nav class="navbar" style="display:flex; justify-content:center; align-items:center;">
+      <a class="nav-link" href="#">الرئيسية</a>
+      <a class="nav-link" href="#">الأقسام</a>
+      <a class="nav-link" href="#">العروض</a>
+      <a class="nav-link" href="#">الاتصال</a>
+    </nav>
+  </header>
+
+  <!-- قسم الهيرو -->
+  <section class="hero-section" style="background-image:url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>كل بطاقات الألعاب في مكان واحد!</h1>
+      <p>اشحن رصيدك وجواهر ألعابك بسهولة وبأمان.</p>
+      <a href="#" class="btn-primary">اطلب الآن</a>
+    </div>
+  </section>
+
+  <!-- قسم الأقسام -->
+  <section style="padding:2rem 1rem;">
+    <h2 class="section-title">الأقسام</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://images.pexels.com/photos/3327483/pexels-photo-3327483.jpeg?auto=compress&cs=tinysrgb&w=400" alt="قسم 1">
+        <div class="card-title">بطاقات iTunes</div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.pexels.com/photos/163077/epic-card-games-trading-cards-163077.jpeg?auto=compress&cs=tinysrgb&w=400" alt="قسم 2">
+        <div class="card-title">بطاقات ألعاب</div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.pexels.com/photos/292858/pexels-photo-292858.jpeg?auto=compress&cs=tinysrgb&w=400" alt="قسم 3">
+        <div class="card-title">روبلوكس</div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.pexels.com/photos/1111314/pexels-photo-1111314.jpeg?auto=compress&cs=tinysrgb&w=400" alt="قسم 4">
+        <div class="card-title">بطاقات متنوعة</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المنتجات -->
+  <section style="padding:2rem 1rem;">
+    <h2 class="section-title">منتجاتنا</h2>
+    <div class="product-grid">
+      <div class="product-card" style="position:relative; flex:1 1 calc(25% - 1.5rem); max-width:calc(25% - 1.5rem);">
+        <img src="https://images.pexels.com/photos/452302/pexels-photo-452302.jpeg?auto=compress&cs=tinysrgb&w=400" alt="منتج 1">
+        <div class="badge-circle">80</div>
+        <div class="card-body">
+          <div class="category-tag">ألعاب واقعية</div>
+          <div class="card-title">بطاقة PUBG – UC 660</div>
+          <div class="card-text">اشحن شداتك بسهولة</div>
+          <div class="price">100 ر.س</div>
+          <div class="actions">
+            <button class="btn-add">إضافة للسلة</button>
+            <button class="btn-wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="position:relative; flex:1 1 calc(25% - 1.5rem); max-width:calc(25% - 1.5rem);">
+        <img src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg?auto=compress&cs=tinysrgb&w=400" alt="منتج 2">
+        <div class="badge-circle">50</div>
+        <div class="card-body">
+          <div class="category-tag">اشتراكات</div>
+          <div class="card-title">بطاقة Netflix</div>
+          <div class="card-text">اشتراك لمدة شهر</div>
+          <div class="price">50 ر.س</div>
+          <div class="actions">
+            <button class="btn-add">إضافة للسلة</button>
+            <button class="btn-wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="position:relative; flex:1 1 calc(25% - 1.5rem); max-width:calc(25% - 1.5rem);">
+        <img src="https://images.pexels.com/photos/290545/pexels-photo-290545.jpeg?auto=compress&cs=tinysrgb&w=400" alt="منتج 3">
+        <div class="badge-circle">30</div>
+        <div class="card-body">
+          <div class="category-tag">بطاقات شحن</div>
+          <div class="card-title">بطاقة iTunes 100</div>
+          <div class="card-text">بطاقة رقمية</div>
+          <div class="price">120 ر.س</div>
+          <div class="actions">
+            <button class="btn-add">إضافة للسلة</button>
+            <button class="btn-wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="position:relative; flex:1 1 calc(25% - 1.5rem); max-width:calc(25% - 1.5rem);">
+        <img src="https://images.pexels.com/photos/163077/epic-card-games-trading-cards-163077.jpeg?auto=compress&cs=tinysrgb&w=400" alt="منتج 4">
+        <div class="badge-circle">15</div>
+        <div class="card-body">
+          <div class="category-tag">بطاقات لعب</div>
+          <div class="card-title">بطاقة Apex Legends</div>
+          <div class="card-text">تشحن ألعابك المفضلة</div>
+          <div class="price">80 ر.س</div>
+          <div class="actions">
+            <button class="btn-add">إضافة للسلة</button>
+            <button class="btn-wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم العروض التجريبي -->
+  <section class="offer-slider">
+    <div class="offer-card" style="margin:0 1rem;">
+      <img src="https://images.pexels.com/photos/381996/pexels-photo-381996.jpeg?auto=compress&cs=tinysrgb&w=400" alt="عرض">
+      <div class="offer-content">
+        <h3>خصم 20٪ على اشتراكات نتفلكس</h3>
+        <p>اشترك الآن واستفد من العرض لفترة محدودة.</p>
+        <button class="btn">اشترك الآن</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم الأسئلة الشائعة التجريبي -->
+  <section class="faq-section">
+    <h2 class="section-title">الأسئلة الشائعة</h2>
+    <div class="faq-item open">
+      <div class="faq-question">ما طرق الدفع المتاحة؟</div>
+      <div class="faq-answer">نقبل بطاقات الائتمان والتحويل البنكي وخدمات المحفظة الإلكترونية.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">هل يمكن تعديل الطلب بعد إرساله؟</div>
+      <div class="faq-answer">نعم، يمكنك التواصل مع خدمة العملاء لتعديل الطلب خلال 24 ساعة.</div>
+    </div>
+  </section>
+
+  <!-- التذييل التجريبي -->
+  <footer class="footer">
+    <p>© 2025 جميع الحقوق محفوظة لمتجرك.</p>
+    <p><a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a></p>
+  </footer>
+
+  <!-- زر الرجوع لأعلى الصفحة -->
+  <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+</body>
+</html>
